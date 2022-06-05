@@ -18,3 +18,12 @@ public class TryCatch1
         }
     }
 }
+
+// with one or more arguments it will print "Exception in Main" and "The end".
+// with no arguments it will print "The end"
+
+/*
+There are two points to understand here:
+1. Even if the program is executed without any arguments, the 'args' is NOT NULL. In such case it will be initialized to an arry of Strings containing zero elements.
+2. The finally block is always executed, no matter how control leaves the try block. Only if, in a try or catch block, System.exit() is called then finally will not be executed.
+ */
