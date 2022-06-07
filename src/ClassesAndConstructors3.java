@@ -1,18 +1,18 @@
-public class ClassAndConstructors3
+public class ClassesAndConstructors3
 {
     int value = 1;
-    ClassAndConstructors3 link;
-    public ClassAndConstructors3(int val){ this.value = val; }
+    ClassesAndConstructors3 link;
+    public ClassesAndConstructors3(int val){ this.value = val; }
     public static void main(String[] args)
     {
-        final ClassAndConstructors3 a = new ClassAndConstructors3(5);
-        ClassAndConstructors3 b = new ClassAndConstructors3(10);
+        final ClassesAndConstructors3 a = new ClassesAndConstructors3(5);
+        ClassesAndConstructors3 b = new ClassesAndConstructors3(10);
         a.link = b.link;
         b.link = setIt(a, b);
 //        System.out.println(a.link.value+" "+b.link.value); // calls value on object that is null; hence null pointer exception.
     }
 
-    public static ClassAndConstructors3 setIt(final ClassAndConstructors3 x, final ClassAndConstructors3 y)
+    public static ClassesAndConstructors3 setIt(final ClassesAndConstructors3 x, final ClassesAndConstructors3 y)
     {
         x.link = y.link; // y link is b.link here.  b.link is null
         return x;
