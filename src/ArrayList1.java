@@ -27,3 +27,18 @@ The JavaDoc API description of this method is important for the exam -
 public boolean remove(Object o)
 Removes the first occurrence of the specified element from this list, if it is present (optional operation). If this list does not contain the element, it is unchanged. More formally, removes the element with the lowest index i such that (o==null ? get(i)==null : o.equals(get(i))) (if such an element exists). Returns true if this list contained the specified element (or equivalently, if this list changed as a result of the call).
  */
+
+/*
+All implementations of List including ArrayList can be sorted by using the
+sort() method of the Collections class.
+
+Collections.sort(l);
+
+To sort by natural ordering, the class of the elements must implement a Comparable
+interface.
+
+If we have multiple threads to add or remove elements from an ArrayList, we need
+to write additional code to ensure thread safety.
+
+The performance of ArrayList and Arrays is more or less the same.
+ */
